@@ -989,6 +989,12 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/apple_intelligence.list
+  Bahamut:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
   BanAD:
     type: http
     behavior: classical
@@ -1001,6 +1007,18 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  Bilibili:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+  BilibiliHMT:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
   ChatGPT:
     type: http
     behavior: classical
@@ -1067,6 +1085,18 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/google_gemini.list
+  HKBank:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/HKBank.list
+  HKBroker:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://gitlab.com/KujouYuko/clash_rules/-/raw/master/RuleSet/HKSecurities.list
   LocalAreaNetwork:
     type: http
     behavior: classical
@@ -1139,6 +1169,18 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list
+  UKBank:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/UKBank.list
+  USBroker:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/USBroker.list
   UnBan:
     type: http
     behavior: classical
@@ -1157,48 +1199,6 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTubeMusic.list
-  巴哈姆特:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
-  哔哩哔哩:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
-  哔哩哔哩港澳台:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
-  香港银行:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/HKBank.list
-  英国银行:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/UKBank.list
-  香港券商:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://gitlab.com/KujouYuko/clash_rules/-/raw/master/RuleSet/HKSecurities.list
-  美国券商:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/USBroker.list
 
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
@@ -1239,13 +1239,13 @@ rules:
   - RULE-SET,Steam,Steam,no-resolve
   - RULE-SET,SteamCN,Steam CN,no-resolve
   - RULE-SET,Telegram,Telegram,no-resolve
-  - RULE-SET,巴哈姆特,巴哈姆特,no-resolve
-  - RULE-SET,哔哩哔哩,哔哩哔哩,no-resolve
-  - RULE-SET,哔哩哔哩港澳台,哔哩哔哩,no-resolve
-  - RULE-SET,香港银行,香港银行,no-resolve
-  - RULE-SET,英国银行,英国银行,no-resolve
-  - RULE-SET,香港券商,香港券商,no-resolve
-  - RULE-SET,美国券商,美国券商,no-resolve
+  - RULE-SET,Bahamut,巴哈姆特,no-resolve
+  - RULE-SET,Bilibili,哔哩哔哩,no-resolve
+  - RULE-SET,BilibiliHMT,哔哩哔哩,no-resolve
+  - RULE-SET,HKBank,香港银行,no-resolve
+  - RULE-SET,UKBank,英国银行,no-resolve
+  - RULE-SET,HKBroker,香港券商,no-resolve
+  - RULE-SET,USBroker,美国券商,no-resolve
   - RULE-SET,GFWList,GFW List,no-resolve
   - RULE-SET,UnBan,国内站点,no-resolve
   - RULE-SET,ChinaDomain,国内站点,no-resolve
