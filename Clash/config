@@ -1180,13 +1180,13 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/HKBank.list
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/HKBank.list
   英国银行:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/UKBank.list
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/UKBank.list
   香港券商:
     type: http
     behavior: classical
@@ -1198,7 +1198,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/USBroker.list
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/USBroker.list
 
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
