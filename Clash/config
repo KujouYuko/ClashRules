@@ -1,0 +1,1254 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: "*"
+external-controller: 127.0.0.1:9093
+log-level: warning
+
+find-process-mode: strict
+global-client-fingerprint: chrome
+
+ipv6: true
+tcp-concurrent: true
+unified-delay: true
+
+geo-auto-update: true
+geo-update-interval: 24
+geodata-loader: standard
+
+geox-url:
+  asn: "https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb"
+  geoip: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
+  geosite: "https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+  mmdb: "https://cdn.jsdelivr.net/gh/alecthw/mmdb_china_ip_list@release/Country.mmdb"
+
+profile:
+  store-fake-ip: true
+  store-selected: true
+
+tun:
+  enable: true
+  auto-detect-interface: true
+  auto-route: true
+  endpoint-independent-nat: true
+  stack: mixed
+  strict-route: true
+
+  dns-hijack:
+    - any:53
+    - tcp://any:53
+
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  ipv6: true
+  prefer-h3: true
+  respect-rules: true
+
+  nameserver:
+    - tls://8.8.8.8:853
+    - tls://[2001:4860:4860::8888]:853
+
+  direct-nameserver:
+    - tls://223.5.5.5:853
+
+  proxy-server-nameserver:
+    - tls://223.5.5.5:853
+    - tls://208.67.222.222:853
+
+  fake-ip-filter:
+    - "*"
+    - "+._msdcs"
+    - "+._tcp"
+    - "+.home.arpa"
+    - "+.10.in-addr.arpa"
+    - "+.16.172.in-addr.arpa"
+    - "+.17.172.in-addr.arpa"
+    - "+.18.172.in-addr.arpa"
+    - "+.19.172.in-addr.arpa"
+    - "+.20.172.in-addr.arpa"
+    - "+.21.172.in-addr.arpa"
+    - "+.22.172.in-addr.arpa"
+    - "+.23.172.in-addr.arpa"
+    - "+.24.172.in-addr.arpa"
+    - "+.25.172.in-addr.arpa"
+    - "+.26.172.in-addr.arpa"
+    - "+.27.172.in-addr.arpa"
+    - "+.28.172.in-addr.arpa"
+    - "+.29.172.in-addr.arpa"
+    - "+.30.172.in-addr.arpa"
+    - "+.31.172.in-addr.arpa"
+    - "+.168.192.in-addr.arpa"
+    - "+.254.169.in-addr.arpa"
+    - "+.126.net"
+    - "+.battlenet.com.cn"
+    - "+.bogon"
+    - "+.example"
+    - "+.ff14.sdo.com"
+    - "+.ffxiv.com"
+    - "+.finalfantasyxiv.com"
+    - "+.heartbeat.belkin.com"
+    - "+.hexin.cn"
+    - "+.injections.adguard.org"
+    - "+.invalid"
+    - "+.ipv6.microsoft.com"
+    - "+.joox.com"
+    - "+.kuwo.cn"
+    - "+.lan"
+    - "+.lens.l.google.com"
+    - "+.linksys.com"
+    - "+.linksyssmartwifi.com"
+    - "+.local"
+    - "+.local.adguard.org"
+    - "+.localdomain"
+    - "+.localhost"
+    - "+.localhost.*.qq.com"
+    - "+.m2m"
+    - "+.mcdn.bilivideo.cn"
+    - "+.media.dssott.com"
+    - "+.mesu.apple.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    - "+.music.163.com"
+    - "+.music.migu.cn"
+    - "+.music.tc.qq.com"
+    - "+.nflxvideo.net"
+    - "+.ntp.org.cn"
+    - "+.pool.ntp.org"
+    - "+.push.apple.com"
+    - "+.push.dbankcloud.com"
+    - "+.push.hicloud.com"
+    - "+.push.oppomobile.com"
+    - "+.pvp.net"
+    - "+.router.asus.com"
+    - "+.songsearch.kugou.com"
+    - "+.square-enix.com"
+    - "+.srv.nintendo.net"
+    - "+.stream.qqmusic.qq.com"
+    - "+.stun.*"
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.swcdn.apple.com"
+    - "+.swdist.apple.com"
+    - "+.swdownload.apple.com"
+    - "+.swquery.apple.com"
+    - "+.swscan.apple.com"
+    - "+.test"
+    - "+.time.edu.cn"
+    - "+.trackercdn.kugou.com"
+    - "+.wargaming.net"
+    - "+.wggames.cn"
+    - "+.wotgame.cn"
+    - "+.wowsgame.cn"
+    - "+.xbox.*.microsoft.com"
+    - "+.xiami.com"
+    - "+.xmpush.xiaomi.com"
+    - "+.xnotify.xboxlive.com"
+    - "+.y.qq.com"
+    - "alt1-mtalk.google.com"
+    - "alt2-mtalk.google.com"
+    - "alt3-mtalk.google.com"
+    - "alt4-mtalk.google.com"
+    - "alt5-mtalk.google.com"
+    - "alt6-mtalk.google.com"
+    - "alt7-mtalk.google.com"
+    - "alt8-mtalk.google.com"
+    - "api.joox.com"
+    - "api-jooxtt.sanook.com"
+    - "api-push.vivo.com.cn"
+    - "aqqmusic.tc.qq.com"
+    - "clock.neu.edu.cn"
+    - "fcm.googleapis.com"
+    - "ff.dorado.sdo.com"
+    - "mtalk.google.com"
+    - "music.taihe.com"
+    - "musicapi.taihe.com"
+    - "ntp.*.cn"
+    - "ntp.*.com"
+    - "ntp.ntsc.ac.cn"
+    - "ntp1.*.com"
+    - "ntp2.*.com"
+    - "ntp3.*.com"
+    - "ntp4.*.com"
+    - "ntp5.*.com"
+    - "ntp6.*.com"
+    - "ntp7.*.com"
+    - "proxy.golang.org"
+    - "time.*.apple.com"
+    - "time.*.com"
+    - "time.*.edu.cn"
+    - "time.*.gov"
+    - "time1.*.com"
+    - "time1.cloud.tencent.com"
+    - "time2.*.com"
+    - "time3.*.com"
+    - "time4.*.com"
+    - "time5.*.com"
+    - "time6.*.com"
+    - "time7.*.com"
+    - "time-ios.apple.com"
+    - "geosite:private"
+
+  nameserver-policy:
+    "+._msdcs": system
+    "+._tcp": system
+    "+.bogon": system
+    "+.captive.apple.com": system
+    "+.cloudflareclient.com": "tls://1.1.1.1:853"
+    "+.hexin.cn": system
+    "+.hotspot.cslwifi.com": system
+    "+.injections.adguard.org": system
+    "+.local.adguard.org": system
+    "+.m2m": system
+    "+.msftconnecttest.com": system
+    "+.msftncsi.com": system
+    "+.securelogin.com.cn": system
+    "geosite:private": system
+
+proxy-providers:
+  sub:
+    type: http
+    interval: 86400
+    url: PUT_YOUR_SUB_URL_HERE
+    health-check:
+      enable: true
+      interval: 60
+      url: http://cp.cloudflare.com/generate_204
+
+proxy-groups:
+  - name: 节点选择
+    type: select
+    proxies:
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - DIRECT
+  - name: 节点备选
+    type: select
+    proxies:
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - DIRECT
+  - name: 手动选择
+    type: select
+    include-all-providers: true
+    include-all-proxies: true
+    proxies:
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - DIRECT
+  - name: 通用代理
+    type: select
+    proxies:
+      - 节点选择
+      - 节点备选
+      - 手动选择
+      - DIRECT
+  - name: 通用直连
+    type: select
+    proxies:
+      - DIRECT
+      - 节点选择
+      - 节点备选
+      - 手动选择
+  - name: 海外 AI
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: Apple
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+  - name: Google
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: Microsoft
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: Netflix
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: Samsung
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+  - name: Spotify
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: Steam CDN
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+  - name: Steam
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: Steam CN
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+  - name: Telegram
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: 巴哈姆特
+    type: select
+    proxies:
+      - 台湾
+      - 通用代理
+      - 节点备选
+      - 通用直连
+      - 手动选择
+  - name: 哔哩哔哩
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 中国
+      - 手动选择
+  - name: 香港银行
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 手动选择
+  - name: 英国银行
+    type: select
+    proxies:
+      - 英国
+      - 通用代理
+      - 节点备选
+      - 通用直连
+      - 手动选择
+  - name: 香港券商
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 手动选择
+  - name: 美国券商
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+  - name: GFW List
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: 国内站点
+    type: select
+    proxies:
+      - 通用直连
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+  - name: 未归类
+    type: select
+    proxies:
+      - 通用代理
+      - 节点备选
+      - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
+      - 手动选择
+      - 通用直连
+  - name: 香港
+    type: select
+    include-all: true
+    proxies:
+      - 香港 自动测速
+      - 香港 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)港|(\b(HK|Hong Kong)\b))).*$
+  - name: 台湾
+    type: select
+    include-all: true
+    proxies:
+      - 台湾 自动测速
+      - 台湾 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)台|新竹|高雄|花莲|(\b(TW|Taiwan|Hsinchu|Kaohsiung|Hualien)\b))).*$
+  - name: 日本
+    type: select
+    include-all: true
+    proxies:
+      - 日本 自动测速
+      - 日本 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)日|东京|大阪|埼玉|(\b(JP|Japan)\b))).*$
+  - name: 新加坡
+    type: select
+    include-all: true
+    proxies:
+      - 新加坡 自动测速
+      - 新加坡 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)新|狮城|(\b(SG|Singapore)\b))).*$
+  - name: 美国
+    type: select
+    include-all: true
+    proxies:
+      - 美国 自动测速
+      - 美国 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b))).*$
+  - name: 韩国
+    type: select
+    include-all: true
+    proxies:
+      - 韩国 自动测速
+      - 韩国 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)韩|首尔|釜山|(\b(KR|South Korea)\b))).*$
+  - name: 英国
+    type: select
+    include-all: true
+    proxies:
+      - 英国 自动测速
+      - 英国 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)英|伦敦|曼彻斯特|(\b(UK|United Kingdom)\b))).*$
+  - name: 德国
+    type: select
+    include-all: true
+    proxies:
+      - 德国 自动测速
+      - 德国 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)德|柏林|汉堡|慕尼黑|(\b(DE|Germany)\b))).*$
+  - name: 印度
+    type: select
+    include-all: true
+    proxies:
+      - 印度 自动测速
+      - 印度 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)印|新德里|孟买|(\b(IN|India)\b))).*$
+  - name: 土耳其
+    type: select
+    include-all: true
+    proxies:
+      - 土耳其 自动测速
+      - 土耳其 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)土|(\b(TR|Turkey)\b))).*$
+  - name: 菲律宾
+    type: select
+    include-all: true
+    proxies:
+      - 菲律宾 自动测速
+      - 菲律宾 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)菲|(\b(PH|Philippines)\b))).*$
+  - name: 中国
+    type: select
+    include-all: true
+    proxies:
+      - 中国 自动测速
+      - 中国 故障转移
+      - DIRECT
+    filter: ^(?=.*((?i)中|回国|中国[^台]|(\b(CN|China)\b))).*$
+  - name: 香港 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)港|(\b(HK|Hong Kong)\b))).*$
+  - name: 台湾 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)台|新竹|高雄|花莲|(\b(TW|Taiwan|Hsinchu|Kaohsiung|Hualien)\b))).*$
+  - name: 日本 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)日|东京|大阪|埼玉|(\b(JP|Japan)\b))).*$
+  - name: 新加坡 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)新|狮城|(\b(SG|Singapore)\b))).*$
+  - name: 美国 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b))).*$
+  - name: 韩国 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)韩|首尔|釜山|(\b(KR|South Korea)\b))).*$
+  - name: 英国 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)英|伦敦|曼彻斯特|(\b(UK|United Kingdom)\b))).*$
+  - name: 德国 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)德|柏林|汉堡|慕尼黑|(\b(DE|Germany)\b))).*$
+  - name: 印度 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)印|新德里|孟买|(\b(IN|India)\b))).*$
+  - name: 土耳其 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)土|(\b(TR|Turkey)\b))).*$
+  - name: 菲律宾 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)菲|(\b(PH|Philippines)\b))).*$
+  - name: 中国 自动测速
+    type: url-test
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)中|回国|中国[^台]|(\b(CN|China)\b))).*$
+  - name: 香港 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)港|(\b(HK|Hong Kong)\b))).*$
+  - name: 台湾 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)台|新竹|高雄|花莲|(\b(TW|Taiwan|Hsinchu|Kaohsiung|Hualien)\b))).*$
+  - name: 日本 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)日|东京|大阪|埼玉|(\b(JP|Japan)\b))).*$
+  - name: 新加坡 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)新|狮城|(\b(SG|Singapore)\b))).*$
+  - name: 美国 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b))).*$
+  - name: 韩国 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)韩|首尔|釜山|(\b(KR|South Korea)\b))).*$
+  - name: 英国 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)英|伦敦|曼彻斯特|(\b(UK|United Kingdom)\b))).*$
+  - name: 德国 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)德|柏林|汉堡|慕尼黑|(\b(DE|Germany)\b))).*$
+  - name: 印度 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)印|新德里|孟买|(\b(IN|India)\b))).*$
+  - name: 土耳其 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)土|(\b(TR|Turkey)\b))).*$
+  - name: 菲律宾 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)菲|(\b(PH|Philippines)\b))).*$
+  - name: 中国 故障转移
+    type: fallback
+    interval: 300
+    timeout: 5000
+    max-failed-times: 3
+    disable-udp: false
+    hidden: true
+    include-all: true
+    lazy: true
+    url: http://cp.cloudflare.com/generate_204
+    filter: ^(?=.*((?i)中|回国|中国[^台]|(\b(CN|China)\b))).*$
+
+rule-providers:
+  AmazonBedrock:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/amazon_bedrock.list
+  Apple:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Apple.list
+  AppleIntelligence:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/apple_intelligence.list
+  BanAD:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+  BanProgramAD:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  ChatGPT:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  Claude:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list
+  Download:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+  GFWList:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+  Google:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+  GoogleCN:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
+  GoogleCNProxyIP:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCNProxyIP.list
+  GoogleFCM:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+  GoogleGemini:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/google_gemini.list
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list
+  Netflix:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+  OneDrive:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list
+  Samsung:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Samsung.list
+  SamsungCustom:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://gitlab.com/KujouYuko/clash_rules/-/raw/master/RuleSet/Samsung.list
+  Scholar:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Scholar.list
+  Spotify:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list
+  Steam:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+  SteamCDN:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Steam_CDN.list
+  SteamCN:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list
+  UnBan:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+  YouTube:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+  YouTubeMusic:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTubeMusic.list
+  巴哈姆特:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+  哔哩哔哩:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+  哔哩哔哩港澳台:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+  香港银行:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/HKBank.list
+  英国银行:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/UKBank.list
+  香港券商:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://gitlab.com/KujouYuko/clash_rules/-/raw/master/RuleSet/HKSecurities.list
+  美国券商:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/USBroker.list
+
+rules:
+  - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
+  - IP-CIDR,208.67.222.222/32,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,通用代理,no-resolve
+  - IP-CIDR6,2001:4860:4860::8888/128,通用代理,no-resolve
+  - DST-PORT,53,REJECT
+  - DST-PORT,853,REJECT
+  - IP-CIDR,203.107.1.0/24,REJECT,no-resolve
+  - IP-CIDR,203.119.206.0/24,REJECT,no-resolve
+  - DOMAIN,msmp.abchina.com.cn,REJECT
+  - DOMAIN-SUFFIX,ahdohpiechei.com,REJECT
+  - DOMAIN-SUFFIX,nexusedgeio.com,REJECT
+  - RULE-SET,BanAD,REJECT,no-resolve
+  - RULE-SET,BanProgramAD,REJECT,no-resolve
+  - RULE-SET,Download,DIRECT,no-resolve
+  - RULE-SET,LocalAreaNetwork,DIRECT,no-resolve
+  - RULE-SET,Scholar,DIRECT,no-resolve
+  - RULE-SET,AmazonBedrock,海外 AI,no-resolve
+  - RULE-SET,AppleIntelligence,海外 AI,no-resolve
+  - RULE-SET,ChatGPT,海外 AI,no-resolve
+  - RULE-SET,Claude,海外 AI,no-resolve
+  - RULE-SET,GoogleGemini,海外 AI,no-resolve
+  - RULE-SET,Apple,Apple,no-resolve
+  - RULE-SET,Google,Google,no-resolve
+  - RULE-SET,GoogleCN,Google,no-resolve
+  - RULE-SET,GoogleCNProxyIP,Google,no-resolve
+  - RULE-SET,GoogleFCM,Google,no-resolve
+  - RULE-SET,YouTube,Google,no-resolve
+  - RULE-SET,YouTubeMusic,Google,no-resolve
+  - RULE-SET,Microsoft,Microsoft,no-resolve
+  - RULE-SET,OneDrive,Microsoft,no-resolve
+  - RULE-SET,Netflix,Netflix,no-resolve
+  - RULE-SET,Samsung,Samsung,no-resolve
+  - RULE-SET,SamsungCustom,Samsung,no-resolve
+  - RULE-SET,Spotify,Spotify,no-resolve
+  - RULE-SET,SteamCDN,Steam CDN,no-resolve
+  - RULE-SET,Steam,Steam,no-resolve
+  - RULE-SET,SteamCN,Steam CN,no-resolve
+  - RULE-SET,Telegram,Telegram,no-resolve
+  - RULE-SET,巴哈姆特,巴哈姆特,no-resolve
+  - RULE-SET,哔哩哔哩,哔哩哔哩,no-resolve
+  - RULE-SET,哔哩哔哩港澳台,哔哩哔哩,no-resolve
+  - RULE-SET,香港银行,香港银行,no-resolve
+  - RULE-SET,英国银行,英国银行,no-resolve
+  - RULE-SET,香港券商,香港券商,no-resolve
+  - RULE-SET,美国券商,美国券商,no-resolve
+  - RULE-SET,GFWList,GFW List,no-resolve
+  - RULE-SET,UnBan,国内站点,no-resolve
+  - RULE-SET,ChinaDomain,国内站点,no-resolve
+  - RULE-SET,ChinaCompanyIp,国内站点,no-resolve
+  - GEOIP,CN,国内站点
+  - MATCH,未归类
