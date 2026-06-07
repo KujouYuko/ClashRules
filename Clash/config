@@ -1121,6 +1121,12 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list
+  Reject:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/Reject.list
   Samsung:
     type: http
     behavior: classical
@@ -1205,13 +1211,7 @@ rules:
   - IP-CIDR,208.67.222.222/32,DIRECT,no-resolve
   - IP-CIDR,8.8.8.8/32,通用代理,no-resolve
   - IP-CIDR6,2001:4860:4860::8888/128,通用代理,no-resolve
-  - DST-PORT,53,REJECT
-  - DST-PORT,853,REJECT
-  - IP-CIDR,203.107.1.0/24,REJECT,no-resolve
-  - IP-CIDR,203.119.206.0/24,REJECT,no-resolve
-  - DOMAIN,msmp.abchina.com.cn,REJECT
-  - DOMAIN-SUFFIX,ahdohpiechei.com,REJECT
-  - DOMAIN-SUFFIX,nexusedgeio.com,REJECT
+  - RULE-SET,Reject,REJECT,no-resolve
   - RULE-SET,BanAD,REJECT,no-resolve
   - RULE-SET,BanProgramAD,REJECT,no-resolve
   - RULE-SET,Download,DIRECT,no-resolve

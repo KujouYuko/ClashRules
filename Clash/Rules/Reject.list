@@ -1,0 +1,14 @@
+# ABC Proxy Check
+DOMAIN,msmp.abchina.com.cn
+
+# Bili HTTP DNS
+IP-CIDR,203.107.1.0/24
+IP-CIDR,203.119.206.0/24
+
+# Bili PCDN
+DOMAIN-SUFFIX,ahdohpiechei.com
+DOMAIN-SUFFIX,nexusedgeio.com
+
+# DNS Lookup
+DST-PORT,53
+DST-PORT,853
