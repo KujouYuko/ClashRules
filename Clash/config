@@ -1037,6 +1037,12 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  ChinaDomainCustom:
+    type: http
+    behavior: classical
+    interval: 86400
+    format: text
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/CNDomain.list
   Claude:
     type: http
     behavior: classical
@@ -1249,6 +1255,7 @@ rules:
   - RULE-SET,GFWList,GFW List,no-resolve
   - RULE-SET,UnBan,国内站点,no-resolve
   - RULE-SET,ChinaDomain,国内站点,no-resolve
+  - RULE-SET,ChinaDomainCustom,国内站点,no-resolve
   - RULE-SET,ChinaCompanyIp,国内站点,no-resolve
   - GEOIP,CN,国内站点
   - MATCH,未归类
