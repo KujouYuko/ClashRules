@@ -533,25 +533,6 @@ proxy-groups:
       - 节点备选
       - 香港
       - 手动选择
-  - name: 美国券商
-    type: select
-    proxies:
-      - 通用直连
-      - 通用代理
-      - 节点备选
-      - 香港
-      - 台湾
-      - 日本
-      - 新加坡
-      - 美国
-      - 韩国
-      - 英国
-      - 德国
-      - 印度
-      - 土耳其
-      - 菲律宾
-      - 中国
-      - 手动选择
   - name: GFW List
     type: select
     proxies:
@@ -1127,12 +1108,6 @@ rule-providers:
     interval: 86400
     format: text
     url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/UKBank.list
-  USBroker:
-    type: http
-    behavior: classical
-    interval: 86400
-    format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/USBroker.list
   UnBan:
     type: http
     behavior: classical
@@ -1191,7 +1166,6 @@ rules:
   - RULE-SET,HKBank,香港银行,no-resolve
   - RULE-SET,UKBank,英国银行,no-resolve
   - RULE-SET,HKBroker,香港券商,no-resolve
-  - RULE-SET,USBroker,美国券商,no-resolve
   - RULE-SET,GFWList,GFW List,no-resolve
   - RULE-SET,UnBan,国内站点,no-resolve
   - RULE-SET,ChinaDomain,国内站点,no-resolve
