@@ -708,144 +708,96 @@ proxy-groups:
   - name: 香港 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)港|(\b(HK|Hong Kong)\b))).*$
   - name: 台湾 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)台|新竹|高雄|花莲|(\b(TW|Taiwan|Hsinchu|Kaohsiung|Hualien)\b))).*$
   - name: 日本 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)日|东京|大阪|埼玉|(\b(JP|Japan)\b))).*$
   - name: 新加坡 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)新|狮城|(\b(SG|Singapore)\b))).*$
   - name: 美国 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b))).*$
   - name: 韩国 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)韩|首尔|釜山|(\b(KR|South Korea)\b))).*$
   - name: 英国 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)英|伦敦|曼彻斯特|(\b(UK|United Kingdom)\b))).*$
   - name: 德国 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)德|柏林|汉堡|慕尼黑|(\b(DE|Germany)\b))).*$
   - name: 印度 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)印|新德里|孟买|(\b(IN|India)\b))).*$
   - name: 土耳其 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)土|(\b(TR|Turkey)\b))).*$
   - name: 菲律宾 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)菲|(\b(PH|Philippines)\b))).*$
   - name: 中国 自动测速
     type: url-test
     interval: 300
-    timeout: 5000
-    max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     tolerance: 80
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)中|回国|中国[^台]|(\b(CN|China)\b))).*$
@@ -854,10 +806,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)港|(\b(HK|Hong Kong)\b))).*$
   - name: 台湾 故障转移
@@ -865,10 +815,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)台|新竹|高雄|花莲|(\b(TW|Taiwan|Hsinchu|Kaohsiung|Hualien)\b))).*$
   - name: 日本 故障转移
@@ -876,10 +824,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)日|东京|大阪|埼玉|(\b(JP|Japan)\b))).*$
   - name: 新加坡 故障转移
@@ -887,10 +833,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)新|狮城|(\b(SG|Singapore)\b))).*$
   - name: 美国 故障转移
@@ -898,10 +842,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b))).*$
   - name: 韩国 故障转移
@@ -909,10 +851,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)韩|首尔|釜山|(\b(KR|South Korea)\b))).*$
   - name: 英国 故障转移
@@ -920,10 +860,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)英|伦敦|曼彻斯特|(\b(UK|United Kingdom)\b))).*$
   - name: 德国 故障转移
@@ -931,10 +869,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)德|柏林|汉堡|慕尼黑|(\b(DE|Germany)\b))).*$
   - name: 印度 故障转移
@@ -942,10 +878,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)印|新德里|孟买|(\b(IN|India)\b))).*$
   - name: 土耳其 故障转移
@@ -953,10 +887,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)土|(\b(TR|Turkey)\b))).*$
   - name: 菲律宾 故障转移
@@ -964,10 +896,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)菲|(\b(PH|Philippines)\b))).*$
   - name: 中国 故障转移
@@ -975,10 +905,8 @@ proxy-groups:
     interval: 300
     timeout: 400
     max-failed-times: 3
-    disable-udp: false
     hidden: true
     include-all: true
-    lazy: true
     url: http://cp.cloudflare.com/generate_204
     filter: ^(?=.*((?i)中|回国|中国[^台]|(\b(CN|China)\b))).*$
 
