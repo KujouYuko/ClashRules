@@ -840,7 +840,7 @@ proxy-groups:
   - name: 香港 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -851,7 +851,7 @@ proxy-groups:
   - name: 台湾 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -862,7 +862,7 @@ proxy-groups:
   - name: 日本 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -873,7 +873,7 @@ proxy-groups:
   - name: 新加坡 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -884,7 +884,7 @@ proxy-groups:
   - name: 美国 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -895,7 +895,7 @@ proxy-groups:
   - name: 韩国 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -906,7 +906,7 @@ proxy-groups:
   - name: 英国 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -917,7 +917,7 @@ proxy-groups:
   - name: 德国 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -928,7 +928,7 @@ proxy-groups:
   - name: 印度 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -939,7 +939,7 @@ proxy-groups:
   - name: 土耳其 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -950,7 +950,7 @@ proxy-groups:
   - name: 菲律宾 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
@@ -961,7 +961,7 @@ proxy-groups:
   - name: 中国 故障转移
     type: fallback
     interval: 300
-    timeout: 5000
+    timeout: 400
     max-failed-times: 3
     disable-udp: false
     hidden: true
