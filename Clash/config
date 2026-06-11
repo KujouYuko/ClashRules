@@ -1023,7 +1023,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    url: https://gitlab.com/KujouYuko/clash_rules/-/raw/master/RuleSet/HKSecurities.list
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/HKBroker.list
   LocalAreaNetwork:
     type: http
     behavior: classical
