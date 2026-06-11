@@ -528,11 +528,22 @@ proxy-groups:
   - name: 香港券商
     type: select
     proxies:
-      - 通用直连
       - 通用代理
       - 节点备选
       - 香港
+      - 台湾
+      - 日本
+      - 新加坡
+      - 美国
+      - 韩国
+      - 英国
+      - 德国
+      - 印度
+      - 土耳其
+      - 菲律宾
+      - 中国
       - 手动选择
+      - 通用直连
   - name: GFW List
     type: select
     proxies:
