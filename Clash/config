@@ -1100,7 +1100,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Steam_CDN.list
+    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/SteamCDN.list
   SteamCN:
     type: http
     behavior: classical
