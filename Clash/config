@@ -908,175 +908,175 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/amazon_bedrock.list
+    url: https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/clash/rules/amazon_bedrock.list
   Apple:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple.list
   AppleIntelligence:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/ArakawaHenri/Clash_Rules/master/clash/rules/apple_intelligence.list
+    url: https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/clash/rules/apple_intelligence.list
   Bahamut:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bahamut/Bahamut.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.list
   Advertising:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Advertising/Advertising.list
   Bilibili:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/BiliBili/BiliBili.list
   OpenAI:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/OpenAI/OpenAI.list
   ChinaIPs:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ChinaIPs/ChinaIPs.list
   ChinaDomain:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/China/China.list
   ChinaDomainCustom:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/CNDomain.list
+    url: https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/Clash/Rules/CNDomain.list
   Claude:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Claude/Claude.list
   Download:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Download/Download.list
   GFWList:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Proxy/Proxy.list
   Google:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Google/Google.list
   HKBank:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/HKBank.list
+    url: https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/Clash/Rules/HKBank.list
   HKBroker:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/HKBroker.list
+    url: https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/Clash/Rules/HKBroker.list
   Lan:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Lan/Lan.list
   Microsoft:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Microsoft/Microsoft.list
   Netflix:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.list
   Reject:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/Reject.list
+    url: https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/Clash/Rules/Reject.list
   Samsung:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Samsung/Samsung.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Samsung/Samsung.list
   Scholar:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Scholar/Scholar.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Scholar/Scholar.list
   Spotify:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Spotify/Spotify.list
   Steam:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Steam/Steam.list
   SteamCDN:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/SteamCDN.list
+    url: https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/Clash/Rules/SteamCDN.list
   SteamCN:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/SteamCN/SteamCN.list
   Telegram:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Telegram/Telegram.list
   UKBank:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/KujouYuko/ClashRules/main/Clash/Rules/UKBank.list
+    url: https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/Clash/Rules/UKBank.list
   YouTube:
     type: http
     behavior: classical
     interval: 86400
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/YouTube/YouTube.list
 
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
