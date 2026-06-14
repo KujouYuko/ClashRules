@@ -1,16 +1,3 @@
-# BOC
-DOMAIN-SUFFIX,bank-of-china.com
-DOMAIN-SUFFIX,bankofchina.com
-
-# BOCOM
-DOMAIN-SUFFIX,bankcomm.com
-
-# CCB
-DOMAIN-SUFFIX,ccb.com
-
-# CMB
-DOMAIN-SUFFIX,cmbimg.com
-
 # HeyBox
 DOMAIN-SUFFIX,max-c.com
 
@@ -27,7 +14,3 @@ DOMAIN-SUFFIX,xhslink.com
 DOMAIN-SUFFIX,123ths.com
 DOMAIN-SUFFIX,hxkba.com
 DOMAIN-SUFFIX,touzime.com
-
-# UnionPay
-DOMAIN-SUFFIX,unionpay.com
-DOMAIN-SUFFIX,unionpayintl.com
