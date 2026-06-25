@@ -1,0 +1,130 @@
+[general]
+excluded_routes = 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/IP_API.js
+network_check_url = http://cp.cloudflare.com/generate_204
+server_check_url = http://cp.cloudflare.com/generate_204
+resource_parser_url = https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+
+[dns]
+no-system
+doq-server = quic://223.5.5.5:853
+
+[policy]
+static = 节点选择, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, DIRECT
+static = 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, DIRECT
+static = 手动选择, server-tag-regex=.
+static = 通用代理, 节点选择, 节点备选, 手动选择, DIRECT
+static = 通用直连, DIRECT, 节点选择, 节点备选, 手动选择
+
+static = 海外 AI, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = Apple, 通用直连, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择
+static = Google, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = Microsoft, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = Netflix, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = Spotify, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = Steam, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = Telegram, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = 巴哈姆特, 台湾, 通用代理, 节点备选, 通用直连, 手动选择
+static = 哔哩哔哩, 通用直连, 通用代理, 节点备选, 香港, 台湾, 中国, 手动选择
+static = 香港银行, 通用直连, 通用代理, 节点备选, 香港, 手动选择
+static = 英国银行, 英国, 通用代理, 节点备选, 通用直连, 手动选择
+static = 香港券商, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = GFW List, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+static = 国内站点, 通用直连, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择
+static = 未归类, 通用代理, 节点备选, 香港, 台湾, 日本, 新加坡, 美国, 韩国, 英国, 德国, 印度, 土耳其, 菲律宾, 中国, 手动选择, 通用直连
+
+static = 香港, 香港 自动测速, 香港 故障转移, 香港 手动选择
+static = 台湾, 台湾 自动测速, 台湾 故障转移, 台湾 手动选择
+static = 日本, 日本 自动测速, 日本 故障转移, 日本 手动选择
+static = 新加坡, 新加坡 自动测速, 新加坡 故障转移, 新加坡 手动选择
+static = 美国, 美国 自动测速, 美国 故障转移, 美国 手动选择
+static = 韩国, 韩国 自动测速, 韩国 故障转移, 韩国 手动选择
+static = 英国, 英国 自动测速, 英国 故障转移, 英国 手动选择
+static = 德国, 德国 自动测速, 德国 故障转移, 德国 手动选择
+static = 印度, 印度 自动测速, 印度 故障转移, 印度 手动选择
+static = 土耳其, 土耳其 自动测速, 土耳其 故障转移, 土耳其 手动选择
+static = 菲律宾, 菲律宾 自动测速, 菲律宾 故障转移, 菲律宾 手动选择
+static = 中国, 中国 自动测速, 中国 故障转移, 中国 手动选择
+
+url-latency-benchmark = 香港 自动测速, server-tag-regex=港|HK|Hong Kong, check-interval=300, tolerance=80
+url-latency-benchmark = 台湾 自动测速, server-tag-regex=台|新竹|高雄|花莲|TW|Taiwan|Hsinchu|Kaohsiung|Hualien, check-interval=300, tolerance=80
+url-latency-benchmark = 日本 自动测速, server-tag-regex=日|东京|大阪|埼玉|JP|Japan, check-interval=300, tolerance=80
+url-latency-benchmark = 新加坡 自动测速, server-tag-regex=新|狮城|SG|Singapore, check-interval=300, tolerance=80
+url-latency-benchmark = 美国 自动测速, server-tag-regex=美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States, check-interval=300, tolerance=80
+url-latency-benchmark = 韩国 自动测速, server-tag-regex=韩|首尔|釜山|KR|Korea, check-interval=300, tolerance=80
+url-latency-benchmark = 英国 自动测速, server-tag-regex=英|伦敦|曼彻斯特|UK|United Kingdom, check-interval=300, tolerance=80
+url-latency-benchmark = 德国 自动测速, server-tag-regex=德|柏林|汉堡|慕尼黑|DE|Germany, check-interval=300, tolerance=80
+url-latency-benchmark = 印度 自动测速, server-tag-regex=印|新德里|孟买|IN|India, check-interval=300, tolerance=80
+url-latency-benchmark = 土耳其 自动测速, server-tag-regex=土|TR|Turkey, check-interval=300, tolerance=80
+url-latency-benchmark = 菲律宾 自动测速, server-tag-regex=菲|PH|Philippines, check-interval=300, tolerance=80
+url-latency-benchmark = 中国 自动测速, server-tag-regex=中|回国|中国[^台]|CN|China, check-interval=300, tolerance=80
+
+available = 香港 故障转移, server-tag-regex=港|HK|Hong Kong
+available = 台湾 故障转移, server-tag-regex=台|新竹|高雄|花莲|TW|Taiwan|Hsinchu|Kaohsiung|Hualien
+available = 日本 故障转移, server-tag-regex=日|东京|大阪|埼玉|JP|Japan
+available = 新加坡 故障转移, server-tag-regex=新|狮城|SG|Singapore
+available = 美国 故障转移, server-tag-regex=美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+available = 韩国 故障转移, server-tag-regex=韩|首尔|釜山|KR|Korea
+available = 英国 故障转移, server-tag-regex=英|伦敦|曼彻斯特|UK|United Kingdom
+available = 德国 故障转移, server-tag-regex=德|柏林|汉堡|慕尼黑|DE|Germany
+available = 印度 故障转移, server-tag-regex=印|新德里|孟买|IN|India
+available = 土耳其 故障转移, server-tag-regex=土|TR|Turkey
+available = 菲律宾 故障转移, server-tag-regex=菲|PH|Philippines
+available = 中国 故障转移, server-tag-regex=中|回国|中国[^台]|CN|China
+
+static = 香港 手动选择, server-tag-regex=港|HK|Hong Kong
+static = 台湾 手动选择, server-tag-regex=台|新竹|高雄|花莲|TW|Taiwan|Hsinchu|Kaohsiung|Hualien
+static = 日本 手动选择, server-tag-regex=日|东京|大阪|埼玉|JP|Japan
+static = 新加坡 手动选择, server-tag-regex=新|狮城|SG|Singapore
+static = 美国 手动选择, server-tag-regex=美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+static = 韩国 手动选择, server-tag-regex=韩|首尔|釜山|KR|Korea
+static = 英国 手动选择, server-tag-regex=英|伦敦|曼彻斯特|UK|United Kingdom
+static = 德国 手动选择, server-tag-regex=德|柏林|汉堡|慕尼黑|DE|Germany
+static = 印度 手动选择, server-tag-regex=印|新德里|孟买|IN|India
+static = 土耳其 手动选择, server-tag-regex=土|TR|Turkey
+static = 菲律宾 手动选择, server-tag-regex=菲|PH|Philippines
+static = 中国 手动选择, server-tag-regex=中|回国|中国[^台]|CN|China
+
+[server_remote]
+PUT_YOUR_SUB_URL_HERE, tag=PUT_YOUR_SUB_NAME_HERE, update-interval=172800, opt-parser=false, inserted-resource=false, enabled=true
+
+[filter_remote]
+https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/QuantumultX/Rules/Reject.list, tag=REJECT, force-policy=REJECT, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Advertising/Advertising.list, tag=REJECT, force-policy=REJECT, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Download/Download.list, tag=DIRECT, force-policy=DIRECT, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Lan/Lan.list, tag=DIRECT, force-policy=DIRECT, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Scholar/Scholar.list, tag=DIRECT, force-policy=DIRECT, enabled=true
+https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/qx/rules/amazon_bedrock.list, tag=海外 AI, force-policy=海外 AI, enabled=true
+https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/qx/rules/apple_intelligence.list, tag=海外 AI, force-policy=海外 AI, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/OpenAI/OpenAI.list, tag=海外 AI, force-policy=海外 AI, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Claude/Claude.list, tag=海外 AI, force-policy=海外 AI, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Apple/Apple.list, tag=Apple, force-policy=Apple, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Google/Google.list, tag=Google, force-policy=Google, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/YouTube/YouTube.list, tag=Google, force-policy=Google, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Microsoft/Microsoft.list, tag=Microsoft, force-policy=Microsoft, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Netflix/Netflix.list, tag=Netflix, force-policy=Netflix, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=Spotify, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Steam/Steam.list, tag=Steam, force-policy=Steam, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Bahamut/Bahamut.list, tag=巴哈姆特, force-policy=巴哈姆特, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/BiliBili/BiliBili.list, tag=哔哩哔哩, force-policy=哔哩哔哩, enabled=true
+https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/QuantumultX/Rules/HKBank.list, tag=香港银行, force-policy=香港银行, enabled=true
+https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/QuantumultX/Rules/UKBank.list, tag=英国银行, force-policy=英国银行, enabled=true
+https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/QuantumultX/Rules/HKBroker.list, tag=香港券商, force-policy=香港券商, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Proxy/Proxy.list, tag=GFW List, force-policy=GFW List, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/China/China.list, tag=国内站点, force-policy=国内站点, enabled=true
+https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/ChinaIPs/ChinaIPs.list, tag=国内站点, force-policy=国内站点, enabled=true
+https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/qx/rules/unclassified.list, tag=未归类, force-policy=未归类, enabled=true
+
+[rewrite_remote]
+
+[server_local]
+
+[filter_local]
+IP-CIDR, 223.5.5.5/32, DIRECT
+GEOIP, CN, 通用直连
+FINAL, 未归类
+
+[rewrite_local]
+
+[mitm]

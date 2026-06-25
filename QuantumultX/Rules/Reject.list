@@ -1,0 +1,10 @@
+# ABC Proxy Check
+HOST,msmp.abchina.com.cn,REJECT
+
+# Bili HTTP DNS
+IP-CIDR,203.107.1.0/24,REJECT
+IP-CIDR,203.119.206.0/24,REJECT
+
+# Bili PCDN
+HOST-SUFFIX,ahdohpiechei.com,REJECT
+HOST-SUFFIX,nexusedgeio.com,REJECT
