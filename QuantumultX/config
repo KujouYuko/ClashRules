@@ -114,6 +114,7 @@ https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/QuantumultX/Rules/HKBroker
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/Proxy/Proxy.list, tag=GFW List, force-policy=GFW List, enabled=true
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/China/China.list, tag=国内站点, force-policy=国内站点, enabled=true
 https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/QuantumultX/ChinaIPs/ChinaIPs.list, tag=国内站点, force-policy=国内站点, enabled=true
+https://cdn.jsdelivr.net/gh/KujouYuko/ClashRules@main/QuantumultX/Rules/CNDirect.list, tag=国内站点, force-policy=国内站点, enabled=true
 https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/qx/rules/unclassified.list, tag=未归类, force-policy=未归类, enabled=true
 
 [rewrite_remote]
@@ -122,7 +123,6 @@ https://cdn.jsdelivr.net/gh/ArakawaHenri/Clash_Rules@master/qx/rules/unclassifie
 
 [filter_local]
 IP-CIDR, 223.5.5.5/32, DIRECT
-GEOIP, CN, 通用直连
 FINAL, 未归类
 
 [rewrite_local]
