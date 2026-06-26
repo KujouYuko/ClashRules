@@ -82,3 +82,12 @@ HOST-SUFFIX,itigerup.com,HKBroker
 HOST-SUFFIX,laohu8.com,HKBroker
 HOST-SUFFIX,tigerbbs.com,HKBroker
 HOST-SUFFIX,tigerfintech.com,HKBroker
+
+# VBrokers
+DOMAIN-SUFFIX,hstong.com,HKBroker
+DOMAIN-SUFFIX,hszq8.com,HKBroker
+DOMAIN-SUFFIX,valuable.com.hk,HKBroker
+DOMAIN-SUFFIX,vbkr.com,HKBroker
+DOMAIN-SUFFIX,vbkrhk.com,HKBroker
+DOMAIN-SUFFIX,vclbrokers.com,HKBroker
+DOMAIN-SUFFIX,vcltrade.com,HKBroker
