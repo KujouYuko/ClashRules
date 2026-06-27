@@ -67,21 +67,19 @@ IP-CIDR,170.106.49.0/24,HKBroker
 IP-CIDR,193.112.84.0/24,HKBroker
 
 # Longbridge
+HOST-KEYWORD,longbridge,HKBroker
 HOST-SUFFIX,lbctrl.com,HKBroker
 HOST-SUFFIX,lbkrs.com,HKBroker
-HOST-SUFFIX,longbridge.com,HKBroker
-HOST-SUFFIX,longbridge.global,HKBroker
-HOST-SUFFIX,longbridge.hk,HKBroker
-HOST-SUFFIX,longbridge.sg,HKBroker
-HOST-SUFFIX,longbridgeapp.com,HKBroker
-HOST-SUFFIX,longbridgehk.com,HKBroker
 
 # Tiger
+HOST-KEYWORD,tigerbrokers,HKBroker
 HOST-SUFFIX,itiger.com,HKBroker
 HOST-SUFFIX,itigerup.com,HKBroker
 HOST-SUFFIX,laohu8.com,HKBroker
 HOST-SUFFIX,tigerbbs.com,HKBroker
 HOST-SUFFIX,tigerfintech.com,HKBroker
+HOST-SUFFIX,tigersecurities.com,HKBroker
+HOST-SUFFIX,zhijianfengyi.com,HKBroker
 
 # VBrokers
 HOST-SUFFIX,hstong.com,HKBroker
